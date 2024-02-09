@@ -96,14 +96,6 @@ subprojects {
         ]
     }
 
-    test {
-        useJUnitPlatform()
-        testLogging {
-            showStandardStreams = true
-        }
-    }
-}
-
     // This adds HARNESS_JAVA_AGENT to the testing command if it's
     // provided through the command line.
     // Local builds will still remain same as it only adds if the
@@ -123,6 +115,14 @@ subprojects {
                 }
             }
     }
+
+    test {
+        useJUnitPlatform()
+        testLogging {
+            showStandardStreams = true
+        }
+    }
+}
 
 dependencies {
     rewrite(platform("org.openrewrite.recipe:rewrite-recipe-bom:2.6.3"))
