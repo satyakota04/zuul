@@ -27,7 +27,7 @@ public enum ConnectionCloseType {
     IMMEDIATE,
     GRACEFUL,
     DELAYED_GRACEFUL;
-
+    // rferferfrefrf
     public static ConnectionCloseType fromChannel(Channel ch) {
         ConnectionCloseType type =
                 ch.attr(ConnectionCloseChannelAttributes.CLOSE_TYPE).get();
