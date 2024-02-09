@@ -37,7 +37,7 @@ public enum FilterCategory {
 
     private final String code;
     private final String description;
-
+    // efw
     FilterCategory(String code, String description) {
         this.code = code;
         this.description = description;
