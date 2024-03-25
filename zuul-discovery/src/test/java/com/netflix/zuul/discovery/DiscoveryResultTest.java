@@ -39,7 +39,7 @@ class DiscoveryResultTest {
         assertNotNull(discoveryResult.hashCode());
         assertEquals(0, discoveryResult.hashCode());
     }
-
+    // rftjkhrgu
     @Test
     void serverStatsForEmptySentinel() {
         Truth.assertThat(DiscoveryResult.EMPTY.getServerStats().toString()).isEqualTo("no stats configured for server");
