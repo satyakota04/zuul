@@ -1,0 +1,14 @@
+---
+kind: pipeline
+# type: docker
+name: pipeline-1
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+- name: step-1
+  image: alpine
+  commands:
+  - echo "Hellos from pipeline-1"
